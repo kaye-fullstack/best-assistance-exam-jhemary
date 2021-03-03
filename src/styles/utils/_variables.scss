@@ -1,0 +1,77 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-opensans: 'Open Sans';
+
+$font-montserrat-bold: 'montserrat-bold_0';
+$font-montserrat-light: 'montserrat-light_1';
+$font-opensans-semibold: 'OpenSans-Semibold';
+$font-opensans-bold: 'OPENSANS-BOLD';
+
+/// @type List
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #E50050 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #EDEDED !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444 !default;
+
+/// @type Color
+$lime: #00ff00;
+$light-brown: #978e8e;
+$black: #000;
+$white: #fff;
+$dark-grey: #161415;
+$gray6: #030303;
+$gray77: #C4C4C4;
+$darkgray: #3a3b3d;
+$orange: #f8a845;
+$dark-blue: #2e79b2;
+$dark-blue1: #008fd2;
+$pale-orange: #fde4c5;
+$gray94:#f0f0f0;
+$grayish-red: #a08984;
+$tint: #f9feff;
+$darkgray1:#262626;
+$light-grey: #6b6b6b;
+$light-grey1: #6b6d6c;
+$off-white: #fbfcfe;
+$darkgray2: #242424;
+$darkgray3: #383838;
+$darkgray4:#252525;
+$light-blue: #cadce8;
+$white1: #dfe0e2;
+$white2:#fffefc;
+$light-blue1: #9dabb6;
+$light-blue2: #f6fafd;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;
+

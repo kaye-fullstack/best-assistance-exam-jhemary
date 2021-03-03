@@ -1,0 +1,78 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.section-footer {
+  // padding: 50px 0px 50px 0px;
+  width: 1700px;
+  height: 70px;
+
+  background-color: $white;
+
+  .custom.container {
+    display: contents;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 43px;
+  }
+
+  .content-holder {
+    &:first-child {
+      margin-left: -23px;
+      margin-left: -121px;
+    }
+
+    &:last-child {
+      margin-right: 10px;
+    }
+  }
+
+  .list-unstyled {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+
+    margin-left: 100px;
+  }
+
+  .footer-link {
+    margin: 0px 20px;
+
+    font-size: 15px;
+    color: $darkgray;
+  }
+
+  .icon-footer {
+    margin: 0px 0px 0px 10px;
+    width: 50px;
+    height: auto;
+  }
+}
+//1199 to 992
+@include respond-to(lg) {
+}
+
+//991 to 768
+@include respond-to(md) {
+}
+
+//767 to 576 
+@include respond-to(sm) {
+}
+
+//425 to 320
+@include respond-to(xs) {
+  .section-footer {
+    display: none;
+  }
+}

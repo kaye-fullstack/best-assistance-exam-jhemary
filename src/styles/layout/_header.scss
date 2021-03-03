@@ -1,0 +1,154 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  padding: 27px 0px 31px;
+  height: 117px;
+
+  background: transparent;
+  border-bottom: 1px solid $white1;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+  
+    margin-bottom: 65px;
+  }
+
+  .navbar-toggler {
+    position: relative;
+    top: -37px;
+    right: 10px;
+  }
+
+  .icon-bar {
+    width: 25px;
+    height: 2px;
+
+    background: #0076b1;
+  }
+
+  .img-logo {
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -25px;
+    margin-bottom: 60px;
+    width: 250px;
+  }
+
+  .nav-item {
+    margin-right: 26px;
+  }
+
+  .item-journal {
+    margin-left: 2px;
+  }
+
+  .nav-link {
+    font-family: $font-opensans-semibold;
+    font-size: 14px;
+    color: $light-grey1;
+  }
+
+  .img-call {
+    padding-right: 5px;
+    width: 20px;
+  }
+
+  .btn-call {
+    padding: 15px 24px;
+    margin-top: 3.2px;
+    margin-bottom: 68px;
+    margin-right: 5px;
+    width: 167px;
+    height: 47.5px;
+    
+    font-family: $font-opensans-bold;
+    font-size: 14px;
+    color: $white;
+  
+    background-color: $orange;
+    border: none;
+    border-radius: 254px;
+  }
+
+  .btn-lang {
+    margin-right: 30px;
+    margin-bottom: 67px;
+    width: 80px;
+    height: 46.2px;
+
+    font-size: 13px;
+    color: $white;
+
+    background-color: $dark-blue;
+    border: none;
+    border-radius: 25px;
+  }
+
+  .btn-en {
+    font-family: $font-opensans-semibold;
+    font-size: 12px;
+    color: $white;
+  }
+  
+  .arrow-down {
+    padding-left: 5px;
+  }
+
+  .list-unstyled {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-top: 5px;
+    margin-bottom: 4.5%;
+    margin-left: 13.5%;
+  }
+}
+
+//1199 to 992
+@include respond-to(lg) {
+
+}
+
+//991 to 768
+@include respond-to(md) {
+
+}
+
+//767 to 576 
+@include respond-to(sm) {
+}
+
+//425 to 320
+@include respond-to(xs) {
+  .section-header {
+    border-bottom: none;
+    
+    .img-logo {
+      width: 150px;
+    }
+  }
+}
+
