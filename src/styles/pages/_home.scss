@@ -56,7 +56,7 @@
   }  
 
   .section-banner {
-    background-image: url('../../assets/images/hero.png');
+    background-image: url('../assets/images/hero.png');
     background-size: cover;
     background-image: center;
 
@@ -298,7 +298,7 @@
       padding: 60px;
       margin: -90px 0 47px;
      
-      background-image: url('../../assets/images/road.png');
+      background-image: url('../assets/images/road.png');
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -424,7 +424,7 @@
       width: 50%;
       height: auto;
 
-      background-image: url('../../assets/images/running.png');
+      background-image: url('../assets/images/running.png');
       background-repeat: no-repeat;
 
       .heading {
@@ -467,7 +467,7 @@
       width: 24.7%;
       height: auto;
   
-      background-image: url('../../assets/images/sick.png');
+      background-image: url('../assets/images/sick.png');
       background-repeat: no-repeat;
 
       .heading {
@@ -509,7 +509,7 @@
       width: 24.5%;
       height: auto;
 
-      background-image: url('../../assets/images/skincare.png');
+      background-image: url('../assets/images/skincare.png');
       background-repeat: no-repeat;
 
       .heading {
@@ -550,7 +550,7 @@
       width: 24%;
       height: auto;
 
-      background-image: url('../../assets/images/power.png');
+      background-image: url('../assets/images/power.png');
       background-repeat: no-repeat;
 
       .heading {
@@ -745,7 +745,7 @@
   .section-assistance-app {
     padding-bottom: 1px;
 
-    background-image: url('../../assets/images/building.png');
+    background-image: url('../assets/images/building.png');
     background-size: cover;
     background-position: 40%;
     background-repeat: no-repeat;
@@ -1258,7 +1258,7 @@
         }
 
         &:last-child {
-          
+          margin: 0;
         }
       }
 
