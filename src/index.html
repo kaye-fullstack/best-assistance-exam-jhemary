@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <meta name="format-detection" content="telephone=no">
 
-  <title>Razer Training Design</title>
+  <title>Best Assistance Exam</title>
 
   <link rel="icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./styles/main.min.css">
@@ -33,40 +33,27 @@
     </div>
   <![endif]-->
 
-  <!-- <header class="section-header">
-    <nav class="navbar navbar-expand-lg"> 
-      <div class="container custom-container">
-        <a href="/"><img class="img-logo" src="assets/images/logo.fw.png" alt="logo"></a>
-        <ul class="list-unstyled navigation-bar">
-          <li class="nav-item">
-            <a href="/" class="nav-link">About us</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link">Our Partners</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link">Our Turnkey Solutions</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link">My Journal</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link">Contact us</a>
-          </li>
-          <button class="btn-call">
-            <img class="img-call" src="assets/images/icon-call.png" alt="telephone">+961 1 425 426</button>
-          <button class="btn-lang">EN<i class="arrow-down fa fa-chevron-down"></i></button>
-        </ul>
-      </div>
-    </nav>
-  </header> -->
-
   <header class="section-header">
     <nav class="navbar navbar-expand-lg">
       <div class="container custom-container">
         <a class="navbar-brand" href="/">
           <img class="img-logo" src="assets/images/logo.fw.png" alt="logo">
         </a>
+        <ul class="navbar-nav ml-auto header-md-btn d-lg-none">
+          <li class="nav-item md-btn-call">
+            <a class="nav-link btn-link" href="/">
+              <img class="img-call" src="assets/images/icon-call.png" alt="telephone">
+              <span>+961 1 425 426</span>
+            </a>
+          </li>
+          <li class="nav-item md-btn-lang">
+            <select class="form-control language-select">
+              <option value="/en" selected>EN</option>
+              <option value="/ar">AR</option>
+            </select>
+            <!-- <i class="fa fa-chevron-down"></i> -->
+          </li>
+        </ul>
         <button class="navbar-toggler navbar-toggler-right" id="toggler"
         type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,21 +61,47 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav nav-list ml-auto">
             <li class="nav-item active"><a class="nav-link" href="/">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="/">Our Partners</a></li>
             <li class="nav-item"><a class="nav-link" href="/">Our Turnkey Solutions</a></li>
             <li class="nav-item item-journal"><a class="nav-link" href="/">My Journal</a></li>
             <li class="nav-item"><a class="nav-link" href="/">Contact us</a></li>
+            <li class="nav-item btn-call">
+              <a class="nav-link btn-link" href="/">
+                <img class="img-call" src="assets/images/icon-call.png" alt="telephone">
+                <span>+961 1 425 426</span>
+              </a>
+            </li>
+            <li class="nav-item btn-lang">
+              <select class="form-control language-select">
+                <option value="/en" selected>EN</option>
+                <option value="/ar">AR</option>
+              </select>
+              <!-- <i class="fa fa-chevron-down"></i> -->
+            </li>
           </ul>
-          <button class="btn-call">
-            <img class="img-call" src="assets/images/icon-call.png" alt="telephone">+961 1 425 426</button>
-          <button class="btn-lang">EN<i class="arrow-down fa fa-chevron-down"></i></button>
+          <ul class="list-unstyled header-icons">
+            <li class="list-item">
+              <a href="#" class="link icon-linkedin">
+                <span class="fab fa-linkedin"></span>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link icon-mail">
+                <span class="fas fa-envelope"></span>
+              </a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="link icon-mobile">
+                <span class="fas fa-mobile-alt"></span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
+      </div> 
+    </nav> 
   </header>
 
   <main class="home">
@@ -112,7 +125,7 @@
                     <h3 class="title">YOUR LOCAL <br> & REGIONAL MEDICAL <br> CLAIM MANAGER</h3>
                   </div>
                   <div class="swiper-pagination"></div>
-                  <p class="subtitle" id="mobile-subtitle">What would to like to do ?</p>
+                  <p class="subtitle" id="mobile-subtitle">What would you like to do ?</p>
                   <div class="banner-icons">
                     <img src="assets/images/arrow.png" class="icon-banner" alt="mission">
                     <img src="assets/images/feedback.png" class="icon-banner" alt="feedback">
@@ -125,9 +138,8 @@
                   </div>
                 </div>
               <div class="swiper-slide">
-                <div class="banner-title">
-                  <h3 class="title">YOUR LOCAL <br> & REGIONAL MEDICAL <br> CLAIM MANAGER</h3>
-                </div>
+                <div class="banner-title"> 
+                  <h3 class="title">YOUR LOCAL <br> & REGIONAL MEDICAL <br> CLAIM MANAGER</h3></div>
                 <div class="swiper-pagination"></div>
                 <div class="banner-icons">
                   <img src="assets/images/arrow.png" class="icon-banner" alt="mission">
@@ -359,24 +371,25 @@
             <div class="row">
               <div class="col-md-4 box-share">
                 <div class="icon-holder">
-                  <img src="assets/images/letter.png">
+                  <img src="assets/images/letter.png" class="img-footer">
                 </div>
                   <p class="content">Read and share your medical case story with us. Get inspired and motivate others for a healthier lifestyle.</p>
-                  <a href="/" class="box-links">Share your story</a>
+                  <a href="/" class="box-links"><u class="underline">Share your story</u></a>
                 </div>
                 <div class="col-md-4 box-feedback">
                   <div class="icon-holder">
-                    <img src="assets/images/feed-back.png">
+                    <img src="assets/images/feed-back.png" class="img-footer">
                   </div>
                     <p class="content">We focus on maintaining a professional customized relationship while administering your medical claim</p>
-                    <a href="/" class="box-links">Give us your feedback</a>
+                    <a href="/" class="box-links"><u class="underline">Give us your feedback</u></a>
                   </div>
                   <div class="col-md-4 box-contact">
                 <div class="icon-holder">
-                  <img src="assets/images/call.png">
+                  <img src="assets/images/call.png" class="img-footer">
                 </div>
                 <p class="content contact">+961 1 425 426</p>
                 <a href="/" class="box-links"><u class="underline">Contact us</u></a>
+                <p class="mobile-text">By ⓚ koein</p>
               </div>
            </div>
          </div>

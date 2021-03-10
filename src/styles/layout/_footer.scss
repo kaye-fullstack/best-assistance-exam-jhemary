@@ -4,8 +4,6 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .section-footer {
-  // padding: 50px 0px 50px 0px;
-  width: 1700px;
   height: 70px;
 
   background-color: $white;
@@ -58,16 +56,28 @@
     height: auto;
   }
 }
+
 //1199 to 992
 @include respond-to(lg) {
+  .section-footer {
+    .content-wrapper {
+      justify-content: space-around;
+    }
+  }
 }
 
 //991 to 768
 @include respond-to(md) {
+  .section-footer {
+    display: none;
+  }
 }
 
 //767 to 576 
 @include respond-to(sm) {
+  .section-footer {
+    display: none;
+  }
 }
 
 //425 to 320
@@ -76,3 +86,6 @@
     display: none;
   }
 }
+
+
+

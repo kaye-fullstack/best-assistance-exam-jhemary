@@ -9,10 +9,10 @@ AppName.Modules.ThemeModule = (function () {
     // private stuff
 
     const swiperBanner = new Swiper('.swiper-banner .swiper-container', {
-    //   autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //  },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+     },
       pagination: {
         el: '.swiper-pagination',
       },
@@ -28,16 +28,16 @@ AppName.Modules.ThemeModule = (function () {
         clickable: true,
         breakpoints: {
           640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 0,
+            spaceBetween: 0,
           },
           768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 0,
+            spaceBetween: 0,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 50, 
+            slidesPerView: 0,
+            spaceBetween: 0, 
           },
         },
       },
@@ -79,3 +79,18 @@ AppName.Modules.ThemeModule = (function () {
     init: init,
   };
 })();
+
+const elem = $('header');
+const scrolled = () => {
+ const threshold = $(document).scrollTop() > 50;
+ elem.toggleClass('scrolled', threshold);
+ };
+$(window).on({ scroll: scrolled });
+
+
+$('body').css({'overflow':'hidden'});
+$(document).bind('scroll',function () { 
+     window.scrollTo(0,0); 
+});
+$(document).unbind('scroll'); 
+$('body').css({'overflow':'visible'});
