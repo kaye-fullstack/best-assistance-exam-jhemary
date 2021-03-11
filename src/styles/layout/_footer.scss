@@ -40,13 +40,14 @@
     justify-content: left;
     align-items: center;
 
+    margin-top: -9px;
     margin-left: 100px;
   }
 
   .footer-link {
-    margin: 0px 20px;
+    margin: 0px 22px;
 
-    font-size: 15px;
+    font-size: 14px;
     color: $darkgray;
   }
 
@@ -54,6 +55,14 @@
     margin: 0px 0px 0px 10px;
     width: 50px;
     height: auto;
+  }
+
+  .footer-icons {
+    margin-top: -10px;
+  }
+
+  .footer-links {
+    margin-top: 9px;
   }
 }
 

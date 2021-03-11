@@ -17,9 +17,13 @@
   border-bottom: 1px solid $white1;
   transition: all 1s;
 
-  // &.scrolled {
-  // background-color: $white;
-  // }
+  &.scrolled {
+  padding: 2px 15px;
+  height: 80px;
+
+  background-color: $white;
+  transition: all .4s;
+  }
 
   .navbar {
     display: flex;
@@ -56,13 +60,14 @@
     align-items: center;
 
     margin-top: -25px;
-    margin-bottom: 115px;
+    margin-bottom: 126px;
     margin-left: -3px;
     width: 250px;
   }
 
   .nav-item {
-    margin-right: 26px;
+    margin-top: 8px;
+    margin-right: 29.7px;
   }
 
   .item-journal {
@@ -83,11 +88,11 @@
   .btn-call {
     display: block;
 
-    padding: 15px 24px;
-    margin-top: 3.2px;
+    padding: 15px 12px;
+    margin-top: 2.2px;
     margin-bottom: 68px;
-    margin-right: 5px;
-    width: 167px;
+    margin-right: 3px;
+    width: 168px;
     height: 47.5px;
     
     font-family: $font-opensans-bold;
@@ -99,9 +104,24 @@
     border-radius: 254px;
   }
 
+  .btn-lang {
+    margin-right: 11px;
+    margin-top: 8px;
+
+    background-color: none;
+  }
+
+  .img-arrowdown {
+    position: relative;
+    bottom: 41px;
+    left: 49px;
+    
+    width: 18%
+  }
+
   .btn-link {
-    margin-left: -27px;
-    margin-top: -7px;
+    margin-left: 3px;
+    margin-top: -8px;
     color: $white;
   }
 
@@ -135,13 +155,27 @@
   }
 
   .form-control {
+    padding-left: 22px;
+    margin-top: -7px;
+    margin-right: -12px;
+    width: 80px;
+    height: 42px;
+ 
+    font-family: $font-opensans-bold;
+    font-size: 14px;
+    color: $white;
+
     background-color: #2e79b2;
     border-radius: 25px;
-    color: white;
+    appearance: none;
   }
 
   .header-icons {
     display: none;
+  }
+
+  select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 14px);
   }
 }
 
@@ -350,7 +384,7 @@
 
     .header-icons {
       position: relative;
-      top: 52%;
+      top: 47%;
       bottom: 0;
     }
 
@@ -787,7 +821,7 @@
 
     .header-icons {
       position: relative;
-      bottom: -41.2%;
+      bottom: -38.2%;
     }
 
     .fa {
@@ -807,6 +841,25 @@
     }
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .section-header {
+
+    .img-logo {
+      margin-top: -23px;
+      margin-bottom: 126px;
+      margin-left: -2px;
+      width: 248px;
+    }
+
+    .btn-lang {
+      margin-right: -6px;
+      margin-top: 8px;
+    }
+  }
+}
+
+
 
 
 

@@ -9,10 +9,10 @@ AppName.Modules.ThemeModule = (function () {
     // private stuff
 
     const swiperBanner = new Swiper('.swiper-banner .swiper-container', {
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-     },
+    //   autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //  },
       pagination: {
         el: '.swiper-pagination',
       },
