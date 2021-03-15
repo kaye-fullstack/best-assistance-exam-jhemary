@@ -259,6 +259,7 @@
       background: linear-gradient(to right, $dark-blue1 0%, #0f69a1 100%);
       border: none;
       border-radius: 45.5px;
+      outline: none;
     }
 
     .btn-history {
@@ -271,6 +272,7 @@
       background-color: $pale-orange;
       border-radius: 45.5px;
       border: none;
+      outline: none;
     }
 
     .button-wrapper {
@@ -623,6 +625,7 @@
       background: linear-gradient(to right, $dark-blue1 0%, #0f69a1 100%);
       border: none;
       border-radius: 30px;
+      outline: none;
     }
     
     .btn-journal {
@@ -754,6 +757,7 @@
       background: linear-gradient(to right, $dark-blue1 0%, #0f69a1 100%);
       border: none;
       border-radius: 45.5px;
+      outline: none;
     }
 
     .button-text {
@@ -2968,25 +2972,49 @@
       padding-bottom: 124px;
 
       .banner-title {
-        padding-top: 389px;
+        padding-top: 387px;
         padding-left: 12px;
 
-        letter-spacing: 1px;
+        letter-spacing: 0.9px;
       }
 
       .banner-icons {
         top: 562px;
-        padding-top: 124px;
+        padding-top: 42px;
         margin-left: 7px;
+      }
+
+      .swiper-pagination {
+        margin: 16px 13px;
       }
 
       .icon-banner {
         margin-right: 48px;
       }
+
+      #mobile-subtitle {
+        display: block;
+        margin-top: 88px;
+        margin-bottom: -20px;
+        margin-left: 11px;
+
+        font-size: 16px;
+        color: $white;
+        letter-spacing: 0.2px;
+      }
     } 
 
     .section-mission {
-      padding-bottom: -1px;
+      padding-bottom: 47px;
+
+      .title-mission {
+        margin-top: 1px;
+        margin-bottom: 38px;
+        margin-left: 1px;
+    
+        font-size: 41px;
+        letter-spacing: 0px;
+      }
 
       .content-holder:first-child {
         margin-top: 60px;
@@ -3013,35 +3041,96 @@
       .title-solutions {
         margin-bottom: -33px;
         margin-left: 21px;
-        margin-top: -17px;
-      }
-
-      .title-mission {
-        margin-top: 1px;
-        margin-bottom: 34px;
-        margin-left: 3px;
+        margin-top: -13px;
       }
 
       .list-solutions {
+        margin-top: 5px;
+        margin-bottom: -4px;
         margin-left: 10px;
-        margin-top: 8px;
+      }
+
+      .btn-assistance {
+        margin-left: -3px;
+        width: 200px;
+      }
+
+      .btn-history {
+        margin-left: 5px;
+        width: 200px;
+      }
+
+      .box-content {
+        margin-top: 105px;
+        margin-bottom: 72px;
+      }
+
+      .icon-holder {
+        margin-top: -5px;
+        margin-right: 0;
+        margin-left: 15px;
+      }
+
+      .img-solution {
+        margin-right: 27px;
+        margin-left: 0px;
+      }
+
+      .solution-body {
+        margin-bottom: 4px;
+      }
+
+      .subheading {
+        margin-bottom: 24px;
       }
     }
   
     .section-reading {
+
       .title {
         margin-top: 43px;
-        margin-left: -6px;
         margin-bottom: 4px;
+        margin-left: -7px;
+      }
+
+      .subtitle {
+        margin-top: 0px;
+        margin-left: -8px;
+        letter-spacing: 0.1px;
       }
 
       .btn-journal {
-        margin-left: -7px;
+        margin-top: 4px;
+        margin-left: -8px;
+      }
+
+      .FilterBy {
+        display: block;
+        padding-top: 15px;
+        padding-right: 20px;
+        padding-bottom: 11px;
+        padding-left: 30px;
+        margin-top: 83px;
+        margin-left: 79%;
+        margin-bottom: 0;
+        width: 23%;
+        height: 56px;
+      }
+
+      .img-arrow-down {
+        bottom: 24.5%;
+        left: 97.5%;
+      }
+
+      .swiper-container {
+        top: -40px;
+        left: -4px;
+
+        margin-bottom: 21px;
       }
 
       .swiper-reading {
         margin-left: -4px;
-
       }
 
       .swiper-slide:first-child {
@@ -3062,7 +3151,7 @@
     }
 
     .section-information-system {
-      padding-bottom: -1px;
+      padding-bottom: 99px;
 
       .img-flowertop {
         position: relative;
@@ -3072,36 +3161,48 @@
       }
 
       .content-holder:first-child {
-        margin-top: 20px;
-        margin-left: 39px;
+        margin-top: 0px;
+        margin-left: 42px;
         width: 100%;
+
+        .image-holder {
+          padding-top: 131px;
+        }
       }
 
       .content-holder:last-child {
-        margin-top: -29px;
-        margin-left: -34px;
+        margin-top: -39px;
+        margin-left: -39px;
       }
 
       .image-wrapper {
         position: absolute;
-        right: 36px;
+        right: 38px;
 
-        margin-top: 0px;
+        margin-top: 8px;
       }
+
     }
 
     .section-assistance-app {
       padding-bottom: 0px;
-      margin-bottom: -68px;
+      margin-bottom: -66px;
 
       .image-holder {
-          margin-right: 152px;
+        margin-right: 152px;
       }
 
       .content-holder:first-child {
       
         .title {
-        margin-top: -203px;
+          margin-top: -203px;
+          margin-left: -4px;
+        }
+
+        .subtitle {
+          margin-top: -1px;
+          margin-left: -4px;
+          letter-spacing: -0.1px;
         }
       }
 
@@ -3120,6 +3221,17 @@
           margin-left: -3px;
         }
       }
+
+      .mobile-apps {
+        margin-top: 0%;
+        margin-left: -4px;
+
+        .img-app-store {
+          margin-right: 12px;
+        }
+      }
+
+
     } 
   }
 }
