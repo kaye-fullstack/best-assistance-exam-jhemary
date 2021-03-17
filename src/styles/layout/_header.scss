@@ -114,9 +114,9 @@
   .img-arrowdown {
     position: relative;
     bottom: 41px;
-    left: 49px;
-    
-    width: 18%
+    left: 155px;
+
+    width: 5%;
   }
 
   .btn-link {
@@ -202,6 +202,10 @@
       margin-right: 5px;
       width: 145px;
       height: 45px;
+    }
+
+    .btn-link {
+      padding-right:0;
     }
 
     .btn-lang {
@@ -468,6 +472,7 @@
 
 //767 to 576 
 @include respond-to(sm) {
+
   .section-header {
     border-bottom: none;
 
@@ -481,9 +486,9 @@
     }
 
     .navbar-toggler {
-      top: -32px;
-      right: 15px;
-
+      top: -65px;
+      right: 30px;
+      
       .icon-bar {
         margin-top: 6px;
       }  
@@ -492,7 +497,7 @@
     .nav-item {
       line-height: 30px;
     }
-     
+
     .btn-link {
       font-size: 15px;
       color: $white;
@@ -523,18 +528,6 @@
       background-color: $dark-blue;
       border: none;
       border-radius: 25px;
-
-      .form-control {
-
-        height: auto;
-        color: $white;
-        font-family: $font-opensans-bold;
-        font-size: 15px;
-        background: #0076b1 no-repeat center right 19px;
-        border: none;
-        border-radius: 25px;
-        appearance: none;
-      }
     }
 
     .img-logo {
@@ -623,7 +616,7 @@
 
     .header-icons {
       position: relative;
-      bottom: -42%;
+      bottom: -35.2%;
     }
 
     .img-call {
@@ -636,6 +629,10 @@
       left: 130px;
 
       color: $white;
+    }
+
+    .img-arrowdown {
+      width: 3%;
     }
   }
 }
@@ -662,10 +659,16 @@
     }
 
     .btn-call {
+      margin-top: 20px;
       margin-bottom: 20px;
       width: 200px;
 
       line-height: normal;
+    }
+
+    .btn-lang {
+      margin-top: 25px;
+      margin-right: 0px;
     }
 
     .md-btn-call {
@@ -717,7 +720,7 @@
 
     .navbar-toggler {
       top: -65px;
-      right: 15px;
+      right: 20px;
 
       .icon-bar {
         margin-top: 6px;
@@ -821,7 +824,7 @@
 
     .header-icons {
       position: relative;
-      bottom: -38.2%;
+      bottom: -31.2%;
     }
 
     .fa {
@@ -830,6 +833,11 @@
       left: 115px;
 
       color: $white;
+    }
+
+    .img-arrowdown {
+      left: 160px;
+      width: 4%;
     }
 
     select.form-control:not([size]):not([multiple]) {
@@ -855,6 +863,23 @@
     .btn-lang {
       margin-right: -6px;
       margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .section-header {
+    height: 138px;
+
+    .img-logo {
+      margin-top: -22px;
+      margin-bottom: 126px;
+      margin-left: 135px;
+    }
+
+    .collapse {
+      margin-top: 12px;
     }
   }
 }
