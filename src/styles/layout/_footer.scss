@@ -66,6 +66,35 @@
   }
 }
 
+//2000 to 1701
+@media screen and (min-width:1701px) and (max-width:2000px) {
+  .section-footer {
+    margin-bottom: 60px;
+
+    .footer-icons {
+      margin-top: 40px;
+    }
+
+    .footer-links {
+      margin-top: 60px;
+    }
+
+    .icon-footer {
+      margin-left: 15px;
+      width: 50px;
+      height: auto;
+    }
+
+    .content-holder:first-child {
+      margin-left: -125px;
+    }
+
+    .content-holder:last-child {
+      margin-right: -23px;
+    }
+  }
+}
+
 //1199 to 992
 @include respond-to(lg) {
   .section-footer {
