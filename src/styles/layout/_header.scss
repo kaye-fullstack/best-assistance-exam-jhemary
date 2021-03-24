@@ -14,11 +14,10 @@
   padding: 27px 0px 31px;
   height: 117px;
 
-  border-bottom: 1px solid $white1;
   transition: all 1s;
 
   &.scrolled {
-  padding: 2px 15px;
+  padding: 10px 15px;
   height: 80px;
 
   background-color: $white;
