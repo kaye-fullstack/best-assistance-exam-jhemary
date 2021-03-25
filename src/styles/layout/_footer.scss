@@ -18,6 +18,8 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+
+    // margin-top: 43px;
   }
 
   .content-holder {
@@ -66,6 +68,7 @@
 
 //2000 to 1701
 @media screen and (min-width:1701px) and (max-width:2000px) {
+
   .section-footer {
     margin-bottom: 60px;
 
@@ -83,22 +86,24 @@
       height: auto;
     }
 
-    .content-holder:first-child {
-      margin-left: -125px;
-    }
+    .content-holder {
+      
+      &:first-child {
+      margin-left: -90px;
+      }
 
-    .content-holder:last-child {
-      margin-right: -23px;
+      &:last-child {
+      margin-right: 20px;
+      }
     }
   }
 }
 
 //1199 to 992
-@media screen and (min-width:992px) and (max-width: 1700px) {
+@include respond-to(lg) {
   .section-footer {
     .content-wrapper {
-      justify-content: space-between;
-      margin-top: 40px;
+      justify-content: space-around;
     }
   }
 }
