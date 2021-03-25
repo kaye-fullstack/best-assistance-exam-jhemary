@@ -18,11 +18,25 @@
   transition: all 1s;
 
   &.scrolled {
-  padding: 2px 15px;
+  padding: 10px 15px;
   height: 80px;
 
   background-color: $white;
   transition: all .4s;
+  }
+
+  .btn:hover {
+    color: #0076b1;
+    background-color: #fff;
+    border-color: #285e8e;
+    opacity: 0.5;
+  }
+
+  .form-control:hover {
+    color: #0076b1;
+    background-color: #fff;
+    border-color: #285e8e;
+    opacity: 0.5;
   }
 
   .navbar {
@@ -78,6 +92,19 @@
     font-family: $font-opensans-semibold;
     font-size: 14px;
     color: $light-grey1;
+  }
+
+  .nav-item.active {
+    color: #0076b1;
+  }
+
+  .nav-item.active::before {
+    display: block;
+    position: absolute;
+    bottom: 145px;
+    width: 75px;
+    height: 2px;
+    background-color: #0076b1;
   }
 
   .img-call {
@@ -446,8 +473,8 @@
     }
 
     .btn-link {
-      margin-top: -6px;
-      margin-left: 4px;
+      margin-top: -11px;
+      margin-left: -19px;
 
       color: $white;
     }
