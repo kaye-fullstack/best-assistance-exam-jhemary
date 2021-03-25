@@ -8,7 +8,7 @@ AppName.Modules.ThemeModule = (function () {
   const _privateMethod = () => {
     // private stuff
 
-    const swiperBanner = new Swiper('.swiper-banner .swiper-container', {
+  const swiperBanner = new Swiper('.swiper-banner .swiper-container', {
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -29,21 +29,6 @@ AppName.Modules.ThemeModule = (function () {
       pagination: {
         el: '.swiper-pagination-reading',
         clickable: true,
-
-        // breakpoints: {
-        //   640: {
-        //     slidesPerView: 0,
-        //     spaceBetween: 0,
-        //   },
-        //   768: {
-        //     slidesPerView: 0,
-        //     spaceBetween: 0,
-        //   },
-        //   1024: {
-        //     slidesPerView: 0,
-        //     spaceBetween: 0, 
-        //   },
-        // },
       },
     });
   };
@@ -98,3 +83,9 @@ $(document).bind('scroll',function () {
 });
 $(document).unbind('scroll'); 
 $('body').css({'overflow':'visible'});
+
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+

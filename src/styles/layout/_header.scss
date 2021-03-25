@@ -181,9 +181,8 @@
 
 //2000 to 1701
 @media screen and (min-width: 2000px) {
-  
-  .section-header {
 
+  .section-header {
     .img-logo {
       margin-top: -23px;
       margin-bottom: 127px;
@@ -200,8 +199,12 @@
 
 //1699 to 992
 @media screen and (min-width: 992px) and (max-width: 1699px) {
-
+  
   .section-header {
+
+    &.scrolled {
+      padding: 10px 15px;
+    }
 
     .img-logo {
       margin-bottom: 120px;
