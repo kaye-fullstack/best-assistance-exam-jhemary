@@ -7,6 +7,7 @@ AppName.Modules.ThemeModule = (function () {
   ////////////////////
   const _privateMethod = () => {
     // private stuff
+    var swiper = new Swiper('.swiper-container');
     const swiperBanner = new Swiper('.swiper-banner .swiper-container', {
       autoplay: {
         delay: 2500,

@@ -15,7 +15,7 @@
       padding: 0px;
       margin-bottom: 15px;
     }
-  
+
     #social_side_links {
       position: fixed;
       top: 80.9px;
@@ -122,8 +122,15 @@
       padding-top: 82px;
     }
 
+    .icon-text-wrapper:nth-child(2) {
+      .icon-text {
+        margin-left: -22px;
+      }
+    }
+
     .icon-banner:hover {
       background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
     }
 
     .img-icon-mission,
@@ -178,18 +185,6 @@
     padding-bottom: 51px;
 
     background-color: $white;
-
-    .btn-assistance:hover {
-      color: #fff;
-      background-color: #fff;
-      border-color: #285e8e;
-    }
-
-   .btn-history:hover {
-    color: #fff;
-    background-color: #fff;
-    border-color: #285e8e;
-    }
 
     .content-wrapper {
       display: flex;
@@ -283,6 +278,13 @@
       margin-bottom: 12px;
     }
 
+    .btn:hover {
+      color: #0076b1;
+      background-color: #fff;
+      border-color: #285e8e;
+      opacity: 0.5;
+    }
+
     .btn-assistance {
       margin-top: 46px;
       margin-left: -2px;
@@ -293,8 +295,9 @@
       background: -webkit-gradient(linear, left top, right top, from($dark-blue1), to($dark-blue1));
       background: linear-gradient(to right, $dark-blue1 0%, #0f69a1 100%);
       background-image: linear-gradient(to right top,#72b3f2,#53a0f0,#358ced,#1777e8,#0061e0);
-      border: none;
       border-radius: 45.5px;
+    
+      border:none;
       outline: none;
     }
 
@@ -307,7 +310,7 @@
      
       background-color: $pale-orange;
       border-radius: 45.5px;
-      border: none;
+      border:none;
       outline: none;
     }
 
@@ -461,6 +464,13 @@
       border-radius: 25px;
       outline: 0;
       appearance: none;
+    }
+
+    .FilterBy:hover {
+      color: #0076b1;
+      background-color: #fff;
+      border-color: #285e8e;
+      opacity: 0.5;
     }
 
     .img-arrow-down {
@@ -812,7 +822,7 @@
       outline: none;
     }
 
-    .btn-solutions:hover {
+    .btn-solutions {
         color: #fff;
         background-color: #fff;
         border-color: #285e8e;
@@ -1050,7 +1060,6 @@
   .home {
 
     .sidebar {
-
       #social_side_links {
         position: fixed;
         top: 30.9px;
@@ -1059,6 +1068,7 @@
 
     .section-banner {
       padding-bottom: 237px;
+      background-position: center;
 
       .banner-title {
         padding-top: 387px;
@@ -1069,10 +1079,10 @@
 
       .banner-icons {
         top: 562px;
-         padding-top: 126px;
-    margin-left: 9px;
+        padding-top: 126px;
+        margin-left: 9px;
       }
-
+      
       .swiper-pagination {
         margin: 16px 13px;
       }
@@ -1102,18 +1112,13 @@
         width: 37%;
       }
 
-      .btn-assistance:hover {
-        color: #fff;
+      .btn:hover {
+        color: #0076b1;
         background-color: #fff;
         border-color: #285e8e;
+        opacity: 0.5;
       }
   
-     .btn-history:hover {
-        color: #fff;
-        background-color: #fff;
-        border-color: #285e8e;
-      }
-
       .title-mission {
         font-size: 41px;
         letter-spacing: 0px;
@@ -1121,13 +1126,9 @@
 
       .box {
         padding: 0px 15px;
-        // padding: 80px 40px;
       }
 
       .box-content {
-        // margin-top: 115px;
-        // margin-bottom: 70px;
-        // margin-left: 40px;
         padding-top: 205px;
         padding-bottom: 130px;
         padding-left: 65px;
@@ -1201,6 +1202,13 @@
         letter-spacing: 0.1px;
       }
 
+      .btn:hover {
+        color: #0076b1;
+        background-color: #fff;
+        border-color: #285e8e;
+        opacity: 0.5;
+      }
+  
       .btn-journal {
         margin-top: 4px;
         margin-left: -8px;
@@ -1284,6 +1292,13 @@
         margin-top: 8px;
       }
 
+      .btn:hover {
+        color: #0076b1;
+        background-color: #fff;
+        border-color: #285e8e;
+        opacity: 0.5;
+      }
+  
       .button-text {
         margin-top: 12px;
       }
@@ -1390,6 +1405,7 @@
     }
 
     .section-banner {
+      background-position: center;
 
       .title {
         font-size: 50px;
@@ -1700,6 +1716,7 @@
 
 //991 to 768
 @include respond-to(md) {
+
   .home {
 
     .sidebar {
@@ -1711,7 +1728,9 @@
     }
 
     .section-banner {
-      padding-bottom: 110px;
+      padding-bottom: 117px;
+
+      background-position: center;
 
       .banner-title {
         padding-top: 268px;
@@ -1733,6 +1752,12 @@
         height: -41px;
       }
 
+      .swiper-pagination-bullet {
+        margin-left: 6px;
+        width: 5px;
+        height: 5px;
+      }
+
       .subtitle {
         display: block;
         margin-top: 44px;
@@ -1744,7 +1769,40 @@
       }
 
       .banner-icons {
-        padding-top: 75px;
+        padding-top: 0px;
+      }
+
+      .icon-text-wrapper:nth-child(1) {
+        .icon-text {
+          font-size: 13px;
+        }
+      }
+
+      .icon-text-wrapper:nth-child(2) {
+
+        .icon-holder {
+          margin-top: -8px;
+          margin-left: 0px;
+        }
+
+        .icon-text {
+          margin-left: -16px;
+          font-size: 13px;
+        }
+      }
+
+      .icon-text-wrapper:nth-child(3) {
+
+        .icon-holder {
+          margin-top: -3px;
+          margin-left: 4px;
+        }
+
+        .icon-text {
+          margin-left: 9px;
+          margin-top: 3px;
+          font-size: 13px;
+        }
       }
 
       .icon-banner {
@@ -1761,6 +1819,10 @@
         
       .text-holder {
         margin-top: 5px;
+      }
+
+      #mobile-subtitle {
+        display: block;
       }
     }
 
@@ -2370,6 +2432,8 @@
     .section-banner {
       padding-bottom: 35px;
 
+      background-position: center;
+
       .title {
         margin-top: 0px;
 
@@ -2401,7 +2465,13 @@
       }
 
       .icon-text-wrapper {
-        margin-right: 15px;
+        margin-right: 40px;
+      }
+
+      .icon-text-wrapper:nth-child(2) {
+        .icon-text {
+          margin-left: -15px;
+        }
       }
 
       .icon-banner {
@@ -2779,14 +2849,14 @@
 
       .title {
         position: absolute;
-        top: 270%;
+        top: 260%;
 
         font-size: 20px;
       }
 
       .heading {
         position: absolute;
-        top: 273%;
+        top: 263%;
       
         font-size: 20px;
       }
@@ -3056,7 +3126,7 @@
   }
 }
 
-//320
+//425 to 320
 @include respond-to(xs) {
   .home {
     .sidebar {
@@ -3065,6 +3135,8 @@
 
     .section-banner {
       padding-bottom: 30px;
+
+      background-position: center;
 
       .title {
         margin-top: 0px;
@@ -3098,6 +3170,12 @@
         align-items: center;
 
         margin-top: -67px;
+      }
+
+      .icon-text-wrapper:nth-child(2) {
+        .icon-text {
+          margin-left: -14px;
+        }
       }
 
       .icon-banner {
