@@ -7,8 +7,8 @@ AppName.Modules.ThemeModule = (function () {
   ////////////////////
   const _privateMethod = () => {
     // private stuff
-    var swiper = new Swiper('.swiper-container');
-    const swiperBanner = new Swiper('.swiper-banner .swiper-container', {
+
+  const swiperBanner = new Swiper('.swiper-banner .swiper-container', {
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -21,25 +21,14 @@ AppName.Modules.ThemeModule = (function () {
   
   const _swiperReading = () => {
     var swiperRead = new Swiper('.swiper-reading .swiper-container', {
+      watchSlidesProgress: true,
+      watchSlidesVisibility: true,
+      slidesPerView: 'auto',
       slidesPerView: 0,
       spaceBetween: 0,
       pagination: {
         el: '.swiper-pagination-reading',
         clickable: true,
-        breakpoints: {
-          640: {
-            slidesPerView: 0,
-            spaceBetween: 0,
-          },
-          768: {
-            slidesPerView: 0,
-            spaceBetween: 0,
-          },
-          1024: {
-            slidesPerView: 0,
-            spaceBetween: 0, 
-          },
-        },
       },
     });
   };

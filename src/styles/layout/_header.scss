@@ -14,7 +14,6 @@
   padding: 27px 0px 31px;
   height: 117px;
 
-  // border-bottom: 1px solid $white1;
   transition: all 1s;
 
   &.scrolled {
@@ -351,7 +350,7 @@
 
     .collapse {
       position: fixed;
-      top: 80px;
+      top: 79px;
       bottom: 0;
       right: -100%;
       z-index: 2000;
@@ -960,7 +959,7 @@
 
     .collapse {
       position: fixed;
-      top: 84px;
+      top: 79px;
       bottom: 0;
       right: -100%;
       z-index: 2000;
@@ -1052,7 +1051,6 @@
     }
   }
 }
-
 
 
 
